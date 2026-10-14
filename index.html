@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog Demon Slayer</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
 </head>
 
 <body>
@@ -33,6 +33,137 @@
             <li></li>
         </ul>
     </footer>
+    <header>
+        <h1>Blog Demon Slayer</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Artículos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+
+        </section>
+        <!-- Sección Quiénes Somos -->
+        <section id="quienes-somos" class="section about-section">
+            <div class="about-symbol" aria-hidden="true">絆</div>
+
+            <div class="about-copy">
+                <p class="eyebrow">Detrás del archivo</p>
+
+                <h2>QUIÉNES<br><span>SOMOS</span></h2>
+
+                <p class="lead">
+                    Somos un equipo de desarrollo que comparte la pasión por el anime y manga Demon Slayer. Los desarrolladores involucrados en este proyecto somos estudiantes de desarrollo full-stack con experiencia en programación y diseño web.
+                </p>
+
+                <div class="team-members">
+                    <h3>Equipo de desarrollo:</h3>
+                    <ul>
+                        <li>Mateo Valencia</li>
+                        <li>Luisa Sanchez</li>
+                        <li>Diana Dimate</li>
+                        <li>Santiago López</li>
+                    </ul>
+                </div>
+
+                <p>
+                    Demon Slayer Blog es un proyecto grupal y editorial de programación y diseño web, dedicado a explorar el universo de Kimetsu no Yaiba: sus personajes, arcos narrativos y curiosidades.
+                </p>
+
+                <div class="about-values">
+                    <div>
+                        <b>01</b>
+                        <h3>Pasión</h3>
+                        <p>Celebramos la obra y sus personajes.</p>
+                    </div>
+
+                    <div>
+                        <b>02</b>
+                        <h3>Comunidad</h3>
+                        <p>Un espacio amable para conversar.</p>
+                    </div>
+
+                    <div>
+                        <b>03</b>
+                        <h3>Curiosidad</h3>
+                        <p>Seguimos aprendiendo del universo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="section contact-section">
+            <div class="contact-intro">
+                <p class="eyebrow">Envía una señal al cuartel</p>
+                <h2>HABLEMOS<br><span>DEMON SLAYER</span></h2>
+                <p class="lead">
+                    ¿Tienes una teoría, una sugerencia o una idea para el archivo? Nos encantará conocerla.
+                </p>
+            </div>
+
+            <form id="contact-form" class="contact-form">
+                <div class="form-row">
+                    <label for="contact-name">Nombre</label>
+                    <input
+                        id="contact-name"
+                        name="name"
+                        type="text"
+                        placeholder="Tu nombre"
+                        required
+                        minlength="2"
+                    >
+                </div>
+
+                <div class="form-row">
+                    <label for="contact-email">Correo electrónico</label>
+                    <input
+                        id="contact-email"
+                        name="email"
+                        type="email"
+                        placeholder="tu@correo.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-row">
+                    <label for="contact-subject">Asunto</label>
+                    <select id="contact-subject" name="subject" required>
+                        <option value="" disabled selected>
+                            Selecciona un asunto
+                        </option>
+                        <option>Sugerencia para el blog</option>
+                        <option>Pregunta sobre la serie</option>
+                        <option>Colaboración</option>
+                        <option>Otro tema</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="contact-message">Mensaje</label>
+                    <textarea
+                        id="contact-message"
+                        name="message"
+                        rows="5"
+                        placeholder="Escribe tu mensaje..."
+                        required
+                        minlength="10"
+                    ></textarea>
+                </div>
+
+                <button class="btn primary" type="submit">
+                    Preparar mensaje
+                </button>
+
+                <p id="form-feedback" role="status"></p>
+            </form>
+        </section>
+    </main>
 </body>
 
 </html>
