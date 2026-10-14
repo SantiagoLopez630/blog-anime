@@ -7,55 +7,35 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="topbar">
-    <button class="brand" data-go="inicio" aria-label="Ir al inicio"><span class="brand-seal">滅</span><span>DEMON SLAYER <b>BLOG</b></span></button>
-    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Artículos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
+
+    
+    <header class="header">
+        
     </header>
     
     <main>
-        <!-- Sección de la historia de Tanjiro -->
-        <section>
-            <figure>
-                <img src="Img/kanji.jpg" alt="Kanji/bosque">
-            </figure>
-
-            <h3>LA HISTORIA COMIENZA</h3>
-            <h1>UN VIAJE NACIDO DE LA TRAGEDIA</h1>
-
-            <p>
-                En las montañas del Japón de la era Taishō, un joven bondadoso ve su vida transformada en una noche.
-            </p>
-
-            <p>
-                Después de que un demonio ataca a su familia y su hermana Nezuko se convierte en uno, Tanjiro Kamado emprende un viaje para devolverle su humanidad. Para lograrlo deberá dominar la espada, unirse al Cuerpo de Exterminio y mirar a los demonios sin perder su propia compasión.
-            </p>
-         
-            <p class="generos">
-                <span>ACCION</span>
-                <span>AVENTURA</span>
-                <span>FANTASÍA OSCURA</span>
-                <span>DRAMA</span>
-            </p>
-
-            <div class="stats-container">
-                <div class="stat-box">
-                    <span class="stat-number">23</span>
-                    <span class="stat-label">VOLÚMENES</span>
+        
+        <section id="historia" class="section story">
+            <div class="story-image reveal-frame">
+                <img src="https://i.ytimg.com/vi/ZXZk9g_zCkU/maxresdefault.jpg" alt="Tori">
+                <div class="image-stamp">家族<small>FAMILIA</small></div>
+                <p>«No importa cuántas personas pierdas, no tienes más remedio que seguir viviendo.»</p>
+            </div>
+            
+            <div class="story-copy">
+                <p class="eyebrow">La historia comienza</p>
+                <h2>UN VIAJE NACIDO<br>DE LA <span>TRAGEDIA</span></h2>
+                <p class="lead">En las montañas del Japón de la era Taishō, un joven bondadoso ve su vida transformada en una noche.</p>
+                <p>Después de que un demonio ataca a su familia y su hermana Nezuko se convierte en uno, Tanjiro Kamado emprende un viaje para devolverle su humanidad. Para lograrlo deberá dominar la espada, unirse al Cuerpo de Exterminio y mirar a los demonios sin perder su propia compasión.</p>
+                
+                <div class="genre-tag">
+                    Acción <i></i> Aventura <i></i> Fantasía oscura <i></i> Drama
                 </div>
-                <div class="stat-box">
-                    <span class="stat-number">205</span>
-                    <span class="stat-label">CAPÍTULOS</span>
-                </div>
-                <div class="stat-box">
-                    <span class="stat-number">9</span>
-                    <span class="stat-label">HASHIRA</span>
+                
+                <div class="story-stats">
+                    <div><strong>23</strong><span>Volúmenes</span></div>
+                    <div><strong>205</strong><span>Capítulos</span></div>
+                    <div><strong>9</strong><span>Hashira</span></div>
                 </div>
             </div>
         </section>
@@ -123,99 +103,31 @@
                         <li>Diana Dimate</li>
                         <li>Santiago López</li>
                     </ul>
+     
+       
+        <section id="personajes" class="section character-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Cuerpo de exterminio</p>
+                    <h2>ROSTROS DE LA BATALLA</h2>
                 </div>
-
-                <p>
-                    Demon Slayer Blog es un proyecto grupal y editorial de programación y diseño web, dedicado a explorar el universo de Kimetsu no Yaiba: sus personajes, arcos narrativos y curiosidades.
-                </p>
-
-                <div class="about-values">
-                    <div>
-                        <b>01</b>
-                        <h3>Pasión</h3>
-                        <p>Celebramos la obra y sus personajes.</p>
-                    </div>
-
-                    <div>
-                        <b>02</b>
-                        <h3>Comunidad</h3>
-                        <p>Un espacio amable para conversar.</p>
-                    </div>
-
-                    <div>
-                        <b>03</b>
-                        <h3>Curiosidad</h3>
-                        <p>Seguimos aprendiendo del universo.</p>
-                    </div>
+                <p class="heading-note">Cada respiración nace de una historia. Conoce a quienes se enfrentan a la noche.</p>
+            </div>
+            
+            <div class="character-tools">
+                <label class="search">
+                    <span aria-hidden="true">⌕</span>
+                    <input id="character-search" type="search" placeholder="Buscar personaje o respiración...">
+                </label>
+                <div class="filters" aria-label="Filtrar personajes">
+                    <button class="selected" data-filter="Todos">Todos</button>
+                    <button data-filter="Cazadores">Cazadores</button>
+                    <button data-filter="Hashira">Hashira</button>
                 </div>
             </div>
-        </section>
-
-        <!-- Sección Contacto -->
-        <section id="contacto" class="section contact-section">
-            <div class="contact-intro">
-                <p class="eyebrow">Envía una señal al cuartel</p>
-                <h2>HABLEMOS<br><span>DEMON SLAYER</span></h2>
-                <p class="lead">
-                    ¿Tienes una teoría, una sugerencia o una idea para el archivo? Nos encantará conocerla.
-                </p>
-            </div>
-
-            <form id="contact-form" class="contact-form">
-                <div class="form-row">
-                    <label for="contact-name">Nombre</label>
-                    <input
-                        id="contact-name"
-                        name="name"
-                        type="text"
-                        placeholder="Tu nombre"
-                        required
-                        minlength="2"
-                    >
-                </div>
-
-                <div class="form-row">
-                    <label for="contact-email">Correo electrónico</label>
-                    <input
-                        id="contact-email"
-                        name="email"
-                        type="email"
-                        placeholder="tu@correo.com"
-                        required
-                    >
-                </div>
-
-                <div class="form-row">
-                    <label for="contact-subject">Asunto</label>
-                    <select id="contact-subject" name="subject" required>
-                        <option value="" disabled selected>
-                            Selecciona un asunto
-                        </option>
-                        <option>Sugerencia para el blog</option>
-                        <option>Pregunta sobre la serie</option>
-                        <option>Colaboración</option>
-                        <option>Otro tema</option>
-                    </select>
-                </div>
-
-                <div class="form-row">
-                    <label for="contact-message">Mensaje</label>
-                    <textarea
-                        id="contact-message"
-                        name="message"
-                        rows="5"
-                        placeholder="Escribe tu mensaje..."
-                        required
-                        minlength="10"
-                    ></textarea>
-                </div>
-
-                <button class="btn primary" type="submit">
-                    Preparar mensaje
-                </button>
-
-                <p id="form-feedback" role="status"></p>
-            </form>
+            
+            <div id="character-grid" class="character-grid"></div>
+            <p id="character-empty" class="empty" hidden>No se encontraron cazadores con ese criterio.</p>
         </section>
         <section id="manga" class="section manga-section"><div class="manga-copy"><p class="eyebrow">La obra original</p><h2>DEL PAPEL A<br><span>LA LEYENDA</span></h2><p>Publicado en Weekly Shōnen Jump entre 2016 y 2020, el manga de Koyoharu Gotouge cuenta la historia completa en 23 volúmenes. Su trazo expresivo y ritmo directo construyen el corazón de la adaptación animada.</p><ul><li><b>01</b> Comienza por el volumen 1 para vivir la historia original.</li><li><b>02</b> La serie principal concluye en el volumen 23.</li><li><b>03</b> El anime amplía escenas, pero respeta el eje del manga.</li></ul><button class="btn primary" data-go="contacto">Habla con el blog <span class="arrow">↗</span></button></div><div class="manga-covers" aria-label="Selección ilustrativa de volúmenes"><article class="manga-cover cover-1"><small>KIMETSU NO YAIBA</small><span>水</span><h3>Crueldad</h3><b>VOL. 01</b></article><article class="manga-cover cover-2"><small>KIMETSU NO YAIBA</small><span>炎</span><h3>La fuerza de los Pilares</h3><b>VOL. 08</b></article><article class="manga-cover cover-3"><small>KIMETSU NO YAIBA</small><span>蝶</span><h3>Inmortal</h3><b>VOL. 16</b></article><article class="manga-cover cover-4"><small>KIMETSU NO YAIBA</small><span>日</span><h3>Una vida brillante</h3><b>VOL. 23</b></article><p class="rights-note">Portadas conceptuales creadas para este proyecto; no reproducen material escaneado.</p></div></section>
 
@@ -228,16 +140,54 @@
         <section id="contacto" class="section contact-section"><div class="contact-intro"><p class="eyebrow">Envía una señal al cuartel</p><h2>H
     </main>
 
-    <footer>
-        <div class="footer-infor">
-            <p>Proyecto Blog de Anime</p>
+    
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <span class="brand-seal">滅</span>
+                <h2>DEMON SLAYER<br><b>BLOG</b></h2>
+            </div>
+            <div class="footer-links">
+                <button data-go="historia">Historia</button>
+                <button data-go="personajes">Personajes</button>
+                <button data-go="temporadas">Temporadas</button>
+                <button data-go="quienes-somos">Quiénes somos</button>
+                <button data-go="contacto">Contacto</button>
+            </div>
+            <div class="footer-social">
+                <span>Creado por fans para fans</span>
+                <div>
+                    <a href="#contacto" aria-label="Contacto">✉</a>
+                    <a href="#inicio" aria-label="Volver al inicio">↑</a>
+                </div>
+            </div>
         </div>
-        <ul class="autor-lista">
-            <li>Santiago</li>
-            <li>Mateo</li>
-            <li>Luisa</li>
-            <li>Diana</li>
-        </ul>
+        <p class="disclaimer">Proyecto de fans no oficial. No está afiliado con Koyoharu Gotouge, Shueisha, Aniplex, ufotable ni los titulares de los derechos de Demon Slayer.</p>
+        <small>© <span id="current-year">2026</span> DEMON SLAYER BLOG · ARCHIVO DE CAZADORES</small>
     </footer>
+
+    
+    <button id="back-top" class="back-top" aria-label="Volver arriba" hidden>↑</button>
+    
+    <div id="character-modal" class="modal-backdrop" hidden>
+        <div class="character-modal" role="dialog" aria-modal="true" aria-labelledby="modal-name">
+            <button class="modal-close" aria-label="Cerrar ventana">×</button>
+            <div id="modal-mark" class="modal-mark"></div>
+            <p id="modal-role" class="eyebrow"></p>
+            <h2 id="modal-name"></h2>
+            <p id="modal-text"></p>
+            <strong id="modal-skill"></strong>
+        </div>
+    </div>
+    
+    <div id="info-modal" class="modal-backdrop" hidden>
+        <div class="character-modal info-modal" role="dialog" aria-modal="true" aria-labelledby="info-title">
+            <button class="modal-close" aria-label="Cerrar ventana">×</button>
+            <p class="eyebrow">Archivo cinematográfico</p>
+            <h2 id="info-title"></h2>
+            <p id="info-text"></p>
+        </div>
+    </div>
+
 </body>
 </html>
