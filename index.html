@@ -1,15 +1,15 @@
-<!DOCTYPE html>
-<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de Anime - Kimetsu no Yaiba</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="app.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Archivo de cazadores: historia, personajes y curiosidades de Demon Slayer. Blog creado por fans para fans.">
+  <title>Demon Slayer Blog | Archivo de cazadores</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Blog Demon Slayer</h1>
+  <header class="topbar">
+    <button class="brand" data-go="inicio" aria-label="Ir al inicio"><span class="brand-seal">滅</span><span>DEMON SLAYER <b>BLOG</b></span></button>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>
@@ -61,7 +61,44 @@
         </section>
 
 
-    <main>
+    <a href="#inicio" class="brand">
+        <span class="brand-symbol">滅</span>
+        <span>DEMON SLAYER BLOG</span>
+    </a>
+
+    <nav class="nav-menu" aria-label="Navegación principal">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#personajes">Personajes</a></li>
+            <li><a href="#temporadas">Temporadas</a></li>
+            <li><a href="#curiosidades">Curiosidades</a></li>
+            <li><a href="#manga">Manga</a></li>
+            <li><a href="#peliculas">Películas</a></li>
+            <li><a href="#creadora">Creadora</a></li>
+            <li><a href="#quienes-somos">Quiénes somos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+    <main id="inicio">
+        <section id="inicio" class="portada">
+            <p class="texto-introductorio">ARCHIVO DE CAZADORES</p>
+            <h1 id="titulo-principal">DEMON SLAYER</h1>
+            <p class="subtitulo">KIMETSU NO YAIBA</p>
+            <p class="descripcion">
+                Una historia de valor, sacrificio y esperanza en un mundo donde
+                la humanidad lucha contra los demonios.
+            </p>
+
+            <div class="acciones">
+                <a class="boton" href="#historia">Explorar el universo</a>
+                <a class="boton" href="#personajes">Conocer personajes</a>
+            </div>
+        </section>
+        
         <section>
 
         </section>
@@ -180,6 +217,15 @@
                 <p id="form-feedback" role="status"></p>
             </form>
         </section>
+        <section id="manga" class="section manga-section"><div class="manga-copy"><p class="eyebrow">La obra original</p><h2>DEL PAPEL A<br><span>LA LEYENDA</span></h2><p>Publicado en Weekly Shōnen Jump entre 2016 y 2020, el manga de Koyoharu Gotouge cuenta la historia completa en 23 volúmenes. Su trazo expresivo y ritmo directo construyen el corazón de la adaptación animada.</p><ul><li><b>01</b> Comienza por el volumen 1 para vivir la historia original.</li><li><b>02</b> La serie principal concluye en el volumen 23.</li><li><b>03</b> El anime amplía escenas, pero respeta el eje del manga.</li></ul><button class="btn primary" data-go="contacto">Habla con el blog <span class="arrow">↗</span></button></div><div class="manga-covers" aria-label="Selección ilustrativa de volúmenes"><article class="manga-cover cover-1"><small>KIMETSU NO YAIBA</small><span>水</span><h3>Crueldad</h3><b>VOL. 01</b></article><article class="manga-cover cover-2"><small>KIMETSU NO YAIBA</small><span>炎</span><h3>La fuerza de los Pilares</h3><b>VOL. 08</b></article><article class="manga-cover cover-3"><small>KIMETSU NO YAIBA</small><span>蝶</span><h3>Inmortal</h3><b>VOL. 16</b></article><article class="manga-cover cover-4"><small>KIMETSU NO YAIBA</small><span>日</span><h3>Una vida brillante</h3><b>VOL. 23</b></article><p class="rights-note">Portadas conceptuales creadas para este proyecto; no reproducen material escaneado.</p></div></section>
+
+        <section id="peliculas" class="section film-section"><div class="section-heading"><div><p class="eyebrow">En la gran pantalla</p><h2>CINE DEMON SLAYER</h2></div><p class="heading-note">Dos acontecimientos cinematográficos que llevan el viaje a una escala monumental.</p></div><div class="films"><article class="film-card"><img src="https://images.unsplash.com/photo-1772205074835-7188f0781916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=85&w=1400" alt="Camino japonés entre niebla"><div class="film-overlay"></div><span class="film-year">2020 · PELÍCULA ORIGINAL</span><div class="film-content"><p>Tanjiro · Nezuko · Zenitsu · Inosuke · Rengoku</p><h3>MUGEN<br>TRAIN</h3><small>Una misión a bordo de un tren donde decenas de pasajeros han desaparecido.</small><button class="film-info" data-film="mugen">Ver información <span class="arrow">↗</span></button></div></article><article class="film-card infinity"><img src="https://images.unsplash.com/photo-1771893351803-f1d244961c76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=85&w=1800" alt="Puerta japonesa roja en un bosque"><div class="film-overlay"></div><span class="film-year">2025— · TRILOGÍA CINEMATOGRÁFICA</span><div class="film-content"><p>El Cuerpo de Exterminio · Los Hashira · Lunas Superiores</p><h3>INFINITY<br>CASTLE</h3><small>La batalla final comienza en una fortaleza que desafía toda lógica.</small><button class="film-info" data-film="infinity">Ver información <span class="arrow">↗</span></button></div></article></div><p class="film-note">Nota editorial: algunos estrenos especiales fueron recopilaciones cinematográficas de episodios, no películas narrativas originales.</p></section>
+
+        <section id="creadora" class="section author-section"><div class="author-art"><div class="ink-circle"><span>鰐</span></div><div class="author-caption"><b>Koyoharu Gotouge</b><small>Representación editorial: un cocodrilo con gafas</small></div></div><div class="author-copy"><p class="eyebrow">Tras la espada</p><h2>KOYOHARU<br><span>GOTOUGE</span></h2><p class="lead">La mente detrás de una de las historias más influyentes del manga contemporáneo.</p><p>Gotouge es una mangaka japonesa conocida por preservar su privacidad y representarse públicamente mediante un cocodrilo con gafas. Su sensibilidad para combinar humor, pérdida y vínculos familiares definió la identidad de la serie.</p><div class="author-timeline"><div><b>2013</b><p>Debuta con el trabajo corto <i>Kagarigari</i>.</p></div><div><b>2016</b><p>Comienza la serialización de <i>Kimetsu no Yaiba</i>.</p></div><div><b>2020</b><p>La historia concluye tras 205 capítulos.</p></div></div><p class="source-note">Esta sección usa un símbolo editorial, no una fotografía de la autora.</p></div></section>
+
+        <section id="quienes-somos" class="section about-section"><div class="about-symbol" aria-hidden="true">絆</div><div class="about-copy"><p class="eyebrow">Detrás del archivo</p><h2>QUIÉNES<br><span>SOMOS</span></h2><p class="lead">Un rincón creado por fans para celebrar las historias que nos inspiran.</p><p>Demon Slayer Blog es un proyecto editorial dedicado a explorar el universo de Kimetsu no Yaiba: sus personajes, arcos narrativos, curiosidades y el trabajo creativo que dio vida a esta aventura. Queremos reunir información, compartir teorías con respeto y ayudar tanto a quienes acaban de llegar como a quienes ya conocen cada respiración.</p><div class="about-values"><div><b>01</b><h3>Pasión</h3><p>Celebramos la obra y sus personajes.</p></div><div><b>02</b><h3>Comunidad</h3><p>Un espacio amable para conversar.</p></div><div><b>03</b><h3>Curiosidad</h3><p>Seguimos aprendiendo del universo.</p></div></div><p class="source-note">Somos un blog independiente de fans y no representamos oficialmente a los creadores ni a los titulares de la franquicia.</p></div></section>
+
+        <section id="contacto" class="section contact-section"><div class="contact-intro"><p class="eyebrow">Envía una señal al cuartel</p><h2>H
     </main>
 
     <footer>
