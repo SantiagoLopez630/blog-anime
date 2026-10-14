@@ -1,0 +1,66 @@
+
+:root {
+  --bg: #101112;
+  --panel: #17191b;
+  --panel-2: #1d2022;
+  --text: #f2eee8;
+  --muted: #aaa8a3;
+  --red: #b74335;
+  --red-bright: #e05a43;
+
+  --line: rgba(255, 255, 255, 0.12);
+
+  --serif: 'Cinzel', Georgia, serif;
+  --sans: 'Manrope', Arial, sans-serif;
+
+  --max: 1220px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  line-height: 1.7;
+}
+
+.btn.primary {
+  background: var(--red);
+  color: white;
+  border: 1px solid transparent;
+  padding: 14px 19px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.btn.primary:hover {
+  background: var(--red-bright);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 850px) {
+  .story,
+  .author-section,
+  .manga-section,
+  .about-section,
+  .contact-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .character-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 560px) {
+  .character-grid,
+  .facts-grid,
+  .films {
+    grid-template-columns: 1fr;
+  }
+}
