@@ -40,26 +40,29 @@
             </div>
         </section>
 
+  <header class="topbar">
+    <button class="brand" data-go="inicio" aria-label="Ir al inicio">
+        <span class="brand-seal">滅</span>
+        <span>DEMON SLAYER <b>BLOG</b></span>
+    </button>
 
-    <a href="#inicio" class="brand">
-        <span class="brand-symbol">滅</span>
-        <span>DEMON SLAYER BLOG</span>
-    </a>
+<button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+    <span></span>
+    <span></span>
+</button>
 
-    <nav class="nav-menu" aria-label="Navegación principal">
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#historia">Historia</a></li>
-            <li><a href="#personajes">Personajes</a></li>
-            <li><a href="#temporadas">Temporadas</a></li>
-            <li><a href="#curiosidades">Curiosidades</a></li>
-            <li><a href="#manga">Manga</a></li>
-            <li><a href="#peliculas">Películas</a></li>
-            <li><a href="#creadora">Creadora</a></li>
-            <li><a href="#quienes-somos">Quiénes somos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+<nav class="nav-links" aria-label="Navegación principal">
+    <button data-go="inicio" class="active">Inicio</button>
+    <button data-go="historia">Historia</button>
+    <button data-go="personajes">Personajes</button>
+    <button data-go="temporadas">Temporadas</button>
+    <button data-go="curiosidades">Curiosidades</button>
+    <button data-go="manga">Manga</button>
+    <button data-go="peliculas">Películas</button>
+    <button data-go="creadora">Creadora</button>
+    <button data-go="quienes-somos">Quiénes somos</button>
+    <button data-go="contacto">Contacto</button>
+</nav>
 
 </header>
 
@@ -204,54 +207,59 @@
         <section id="contacto" class="section contact-section"><div class="contact-intro"><p class="eyebrow">Envía una señal al cuartel</p><h2>H
     </main>
 
-    
-    <footer class="footer">
-        <div class="footer-top">
-            <div class="footer-brand">
-                <span class="brand-seal">滅</span>
-                <h2>DEMON SLAYER<br><b>BLOG</b></h2>
-            </div>
-            <div class="footer-links">
-                <button data-go="historia">Historia</button>
-                <button data-go="personajes">Personajes</button>
-                <button data-go="temporadas">Temporadas</button>
-                <button data-go="quienes-somos">Quiénes somos</button>
-                <button data-go="contacto">Contacto</button>
-            </div>
-            <div class="footer-social">
-                <span>Creado por fans para fans</span>
-                <div>
-                    <a href="#contacto" aria-label="Contacto">✉</a>
-                    <a href="#inicio" aria-label="Volver al inicio">↑</a>
-                </div>
-            </div>
-        </div>
-        <p class="disclaimer">Proyecto de fans no oficial. No está afiliado con Koyoharu Gotouge, Shueisha, Aniplex, ufotable ni los titulares de los derechos de Demon Slayer.</p>
-        <small>© <span id="current-year">2026</span> DEMON SLAYER BLOG · ARCHIVO DE CAZADORES</small>
-    </footer>
 
-    
-    <button id="back-top" class="back-top" aria-label="Volver arriba" hidden>↑</button>
-    
-    <div id="character-modal" class="modal-backdrop" hidden>
-        <div class="character-modal" role="dialog" aria-modal="true" aria-labelledby="modal-name">
-            <button class="modal-close" aria-label="Cerrar ventana">×</button>
-            <div id="modal-mark" class="modal-mark"></div>
-            <p id="modal-role" class="eyebrow"></p>
-            <h2 id="modal-name"></h2>
-            <p id="modal-text"></p>
-            <strong id="modal-skill"></strong>
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-brand">
+            <span class="brand-seal">滅</span>
+            <h2>DEMON SLAYER<br><b>BLOG</b></h2>
         </div>
-    </div>
-    
-    <div id="info-modal" class="modal-backdrop" hidden>
-        <div class="character-modal info-modal" role="dialog" aria-modal="true" aria-labelledby="info-title">
-            <button class="modal-close" aria-label="Cerrar ventana">×</button>
-            <p class="eyebrow">Archivo cinematográfico</p>
-            <h2 id="info-title"></h2>
-            <p id="info-text"></p>
+
+        <div class="footer-links">
+            <button data-go="historia">Historia</button>
+            <button data-go="personajes">Personajes</button>
+            <button data-go="temporadas">Temporadas</button>
+            <button data-go="quienes-somos">Quiénes somos</button>
+            <button data-go="contacto">Contacto</button>
+        </div>
+
+        <div class="footer-social">
+            <span>Creado por fans para fans</span>
+            <div>
+                <a href="#contacto" aria-label="Contacto">✉</a>
+                <a href="#inicio" aria-label="Volver al inicio">↑</a>
+            </div>
         </div>
     </div>
 
+    <p class="disclaimer">
+        Proyecto de fans no oficial. No está afiliado con Koyoharu Gotouge,
+        Shueisha, Aniplex, ufotable ni los titulares de los derechos de Demon Slayer.
+    </p>
+
+    <small>© <span id="current-year">2026</span> DEMON SLAYER BLOG · ARCHIVO DE CAZADORES</small>
+</footer>
+
+<button id="back-top" class="back-top" aria-label="Volver arriba" hidden>↑</button>
+
+<div id="character-modal" class="modal-backdrop" hidden>
+    <div class="character-modal" role="dialog" aria-modal="true" aria-labelledby="modal-name">
+        <button class="modal-close" aria-label="Cerrar ventana">×</button>
+        <div id="modal-mark" class="modal-mark"></div>
+        <p id="modal-role" class="eyebrow"></p>
+        <h2 id="modal-name"></h2>
+        <p id="modal-text"></p>
+        <strong id="modal-skill"></strong>
+    </div>
+</div>
+
+<div id="info-modal" class="modal-backdrop" hidden>
+    <div class="character-modal info-modal" role="dialog" aria-modal="true" aria-labelledby="info-title">
+        <button class="modal-close" aria-label="Cerrar ventana">×</button>
+        <p class="eyebrow">Archivo cinematográfico</p>
+        <h2 id="info-title"></h2>
+        <p id="info-text"></p>
+   </div>
+</div>
 </body>
 </html>
