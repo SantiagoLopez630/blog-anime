@@ -1,0 +1,23 @@
+
+
+figure {
+    margin: 0;
+    position: relative;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+h3 {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #ba1212; 
+    margin: 25px 25px 5px 25px;
+    text-transform: uppercase;
+}
+
