@@ -64,3 +64,103 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* ===== Barra de navegación de Diana ===== */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+
+    padding: 18px 30px;
+    background-color: rgba(16, 17, 18, 0.97);
+    border-bottom: 1px solid var(--line);
+}
+
+/* Nombre y símbolo del blog */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--text);
+    text-decoration: none;
+    font-family: var(--serif);
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.brand-symbol {
+    color: var(--red-bright);
+    font-size: 32px;
+}
+
+/* Lista de botones */
+.nav-menu {
+    width: 100%;
+}
+
+.nav-menu ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Apariencia de los enlaces */
+.nav-menu a {
+    display: block;
+    padding: 9px 11px;
+
+    color: var(--muted);
+    text-decoration: none;
+    font-family: var(--sans);
+    font-size: 14px;
+
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    transition: color 0.2s, background-color 0.2s,
+                border-color 0.2s;
+}
+
+/* Efecto al pasar el cursor */
+.nav-menu a:hover,
+.nav-menu a:focus-visible {
+    color: var(--text);
+    background-color: rgba(183, 67, 53, 0.15);
+    border-color: var(--red);
+}
+
+/* Ajustes para celulares */
+@media (max-width: 560px) {
+    .site-header {
+        padding: 14px 16px;
+    }
+
+    .brand {
+        font-size: 18px;
+    }
+
+    .brand-symbol {
+        font-size: 27px;
+    }
+
+    .nav-menu ul {
+        gap: 4px;
+    }
+
+    .nav-menu a {
+        padding: 7px 8px;
+        font-size: 12px;
+    }
+}
