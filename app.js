@@ -1,18 +1,18 @@
 'use strict';
 
 const characters = [
-  {name:'Tanjiro Kamado',mark:'水',color:'#3a8f88',role:'Cazador compasivo',skill:'Respiración del Agua · Hinokami Kagura',text:'Su inquebrantable empatía es tan poderosa como su espada.'},
-  {name:'Nezuko Kamado',mark:'血',color:'#b73b56',role:'Demonio protectora',skill:'Arte Demoníaco de Sangre',text:'Conserva su humanidad y lucha por proteger a quienes ama.'},
-  {name:'Zenitsu Agatsuma',mark:'雷',color:'#d99435',role:'Espadachín del trueno',skill:'Respiración del Rayo',text:'El miedo desaparece cuando su instinto toma el control.'},
-  {name:'Inosuke Hashibira',mark:'獣',color:'#537788',role:'Guerrero salvaje',skill:'Respiración de la Bestia',text:'Impredecible, competitivo y guiado por sentidos extraordinarios.'},
-  {name:'Giyu Tomioka',mark:'凪',color:'#376d81',role:'Pilar del Agua',skill:'Undécima postura · Calma',text:'Sereno y preciso; su decisión cambió el destino de los Kamado.'},
-  {name:'Kyojuro Rengoku',mark:'炎',color:'#c4492d',role:'Pilar de la Llama',skill:'Respiración de la Llama',text:'Una voluntad ardiente que inspira a toda una generación.'},
-  {name:'Shinobu Kocho',mark:'蝶',color:'#765b91',role:'Pilar del Insecto',skill:'Venenos de glicinia',text:'Velocidad, inteligencia y una sonrisa que esconde determinación.'},
-  {name:'Muichiro Tokito',mark:'霞',color:'#438d89',role:'Pilar de la Niebla',skill:'Respiración de la Niebla',text:'Un prodigio distante con un talento excepcional para la espada.'},
-  {name:'Mitsuri Kanroji',mark:'恋',color:'#a75472',role:'Pilar del Amor',skill:'Respiración del Amor',text:'Fuerza extraordinaria, flexibilidad y un corazón sin reservas.'},
-  {name:'Tengen Uzui',mark:'音',color:'#80745f',role:'Pilar del Sonido',skill:'Partitura de combate',text:'Extravagante shinobi que convierte la batalla en ritmo.'},
-  {name:'Sanemi Shinazugawa',mark:'風',color:'#567060',role:'Pilar del Viento',skill:'Respiración del Viento',text:'Feroz por fuera, marcado por una historia de sacrificio.'},
-  {name:'Gyomei Himejima',mark:'岩',color:'#6f6255',role:'Pilar de la Roca',skill:'Respiración de la Roca',text:'El más fuerte de los Pilares; fe, disciplina y poder absoluto.'}
+  {name:'Tanjiro Kamado',mark:'水',color:'#3a8f88',role:'Cazador compasivo',skill:'Respiración del Agua · Hinokami Kagura',text:'Su inquebrantable empatía es tan poderosa como su espada.',image:'https://static.wikitide.net/deathbattlewiki/9/98/Portrait.tanjirokamado.png'},
+  {name:'Nezuko Kamado',mark:'血',color:'#b73b56',role:'Demonio protectora',skill:'Arte Demoníaco de Sangre',text:'Conserva su humanidad y lucha por proteger a quienes ama.',image:'https://images.unsplash.com/photo-1534447677768-be436bb09401?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=85&w=800'},
+  {name:'Zenitsu Agatsuma',mark:'雷',color:'#d99435',role:'Espadachín del trueno',skill:'Respiración del Rayo',text:'El miedo desaparece cuando su instinto toma el control.',image:'https://images.unsplash.com/photo-1578632767115-351597cf2477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=85&w=800'},
+  {name:'Inosuke Hashibira',mark:'獣',color:'#537788',role:'Guerrero salvaje',skill:'Respiración de la Bestia',text:'Impredecible, competitivo y guiado por sentidos extraordinarios.',image:'https://images.unsplash.com/photo-1563089145-599997674d42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=85&w=800'},
+  {name:'Giyu Tomioka',mark:'凪',color:'#376d81',role:'Pilar del Agua',skill:'Undécima postura · Calma',text:'Sereno y preciso; su decisión cambió el destino de los Kamado.',image:'https://i.pinimg.com/1200x/c1/a2/61/c1a261ebe99b8320dc67c2fff4468061.jpg'},
+  {name:'Kyojuro Rengoku',mark:'炎',color:'#c4492d',role:'Pilar de la Llama',skill:'Respiración de la Llama',text:'Una voluntad ardiente que inspira a toda una generación.',image:'https://images.unsplash.com/photo-1519681393784-d120267933ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=85&w=800'},
+  {name:'Shinobu Kocho',mark:'蝶',color:'#765b91',role:'Pilar del Insecto',skill:'Venenos de glicinia',text:'Velocidad, inteligencia y una sonrisa que esconde determinación.',image:'https://images.unsplash.com/photo-1533167649158-6d5088b5b66d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=85&w=800'},
+  {name:'Muichiro Tokito',mark:'霞',color:'#438d89',role:'Pilar de la Niebla',skill:'Respiración de la Niebla',text:'Un prodigio distante con un talento excepcional para la espada.',image:'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=85&w=800'},
+  {name:'Mitsuri Kanroji',mark:'恋',color:'#a75472',role:'Pilar del Amor',skill:'Respiración del Amor',text:'Fuerza extraordinaria, flexibilidad y un corazón sin reservas.',image:'https://images.unsplash.com/photo-1534447677768-be436bb09401?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=85&w=800'},
+  {name:'Tengen Uzui',mark:'音',color:'#80745f',role:'Pilar del Sonido',skill:'Partitura de combate',text:'Extravagante shinobi que convierte la batalla en ritmo.',image:'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=85&w=800'},
+  {name:'Sanemi Shinazugawa',mark:'風',color:'#567060',role:'Pilar del Viento',skill:'Respiración del Viento',text:'Feroz por fuera, marcado por una historia de sacrificio.',image:'https://images.unsplash.com/photo-1519681393784-d120267933ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=85&w=800'},
+  {name:'Gyomei Himejima',mark:'岩',color:'#6f6255',role:'Pilar de la Roca',skill:'Respiración de la Roca',text:'El más fuerte de los Pilares; fe, disciplina y poder absoluto.',image:'https://static.wikia.nocookie.net/factvsfiction/images/2/26/Himejima.png/revision/latest?cb=20200408181247'}
 ];
 
 const navItems = [
@@ -41,6 +41,7 @@ function renderCharacters() {
   grid.innerHTML = filtered.map((character, index) => `
     <article class="character-card" style="--accent:${character.color}">
       <div class="character-visual">
+        <img src="${character.image}" alt="${character.name}" class="character-img" loading="lazy">
         <span class="character-number">${String(index + 1).padStart(2, '0')}</span>
         <span class="character-mark" aria-hidden="true">${character.mark}</span><div class="blade"></div>
         <span class="character-role">${character.role}</span>
@@ -84,6 +85,10 @@ function showCharacter(name) {
   if (!character) return;
   const dialog = characterModal.querySelector('.character-modal');
   dialog.style.setProperty('--accent', character.color);
+  
+  const modalImg = document.querySelector('#modal-img');
+  if (modalImg) modalImg.src = character.image;
+
   document.querySelector('#modal-mark').textContent = character.mark;
   document.querySelector('#modal-role').textContent = character.role;
   document.querySelector('#modal-name').textContent = character.name;
@@ -156,7 +161,6 @@ window.addEventListener('scroll', () => {
 }, {passive:true});
 backTop.addEventListener('click', () => goTo('inicio'));
 
-// El formulario valida los datos y prepara un borrador de correo, pero no lo envía automáticamente.
 document.querySelector('#contact-form').addEventListener('submit', event => {
   event.preventDefault();
   const form = event.currentTarget;
