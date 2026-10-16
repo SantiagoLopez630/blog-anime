@@ -3,4 +3,7 @@
 * Mateo Valencia
 * Luisa Sanchez
 * Diana Dimate
-* Santiago López 
+* Santiago López
+
+
+Link GitHub Pages: https://santiagolopez630.github.io/blog-anime/
